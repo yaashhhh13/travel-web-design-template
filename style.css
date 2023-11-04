@@ -1,0 +1,302 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    overflow: hidden;
+    width: 100%;
+    background-color: rgb(105, 53, 49);
+}
+#main::-webkit-scrollbar{
+    display: none;
+}
+#page1{
+    width: 100%;
+    height: 100vh;
+    background-image: url(./page1new.jpg);
+    background-size: cover;
+    font-family: 'gilroy';
+}
+#nav{
+    position: absolute;
+    display: flex;
+    width: 90%;
+    left: 3%;
+    justify-content: space-between;
+    padding-top: 60px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgb(76, 76, 68);
+    background: linear-gradient(135deg,rgb(255,255,255,.1),rgb(255,255,255,0));
+    backdrop-filter: blur(50px);
+    -webkit-backdrop-filter: blur(50px);
+
+    animation-name: nav;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+@keyframes nav{
+    0%{
+        top: -100%;
+        opacity: 0;
+    }
+    100%{
+        top: 0%;
+        opacity: 1;
+    }
+}
+#nav1{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+#nav1 i{
+    color: rgb(169, 42, 42);
+    font-size: 25px;
+}
+#nav1 h2{
+    text-transform: uppercase;
+    color: antiquewhite;
+}
+#nav2{
+    padding-top: 6px;
+    gap: 40px;
+    word-spacing: 40px;
+}
+#nav2 a{
+    text-decoration: none;
+    color: antiquewhite;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+#nav2 a:hover{
+    color: red;
+}
+#nav3 i{
+    color: antiquewhite;
+    font-size: 25px;
+}
+#centre{
+    position: absolute;
+    width: 50%;
+    height: 40%;
+    top: 30%;
+    left: 7%;
+    color: antiquewhite;
+    align-items: center;
+}
+#centre h1{
+    font-size: 120px;
+    text-transform: uppercase;
+    font-family: 'gilroy';
+
+    animation-name: h1;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+@keyframes h1{
+    0%{
+        top: -100%;
+        opacity: 0;
+    }
+    100%{
+        top: 30%;
+        opacity: 1;
+    }
+}
+
+#centre p{
+    width: 90%;
+    font-size: 25px;
+}
+#cright{
+    position: absolute;
+    left: 90%;
+    top: 39%;
+    width: 5%;
+    color: antiquewhite;
+}
+#cright h3{
+    font-size: 30px;
+}
+#cright h3:hover{
+    font-size: 45px;
+}
+#down{
+    position: absolute;
+    display: flex;
+    left: 10%;
+    top: 80%;
+    color: antiquewhite;
+    gap: 150px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgb(246, 246, 240);
+}
+#down h1{
+    font-size: 25px;
+}
+#down i{
+    font-size: 30px;
+}
+#down i:hover{
+    font-size: 40px;
+    color: rgb(237, 81, 81);
+}
+#down1t{
+    display: flex;
+    gap: 10px;
+}
+#down1b{
+    display: flex;
+    margin-top: 15px;
+    gap: 15px;
+    padding-left: 40px;
+}
+#down2t{
+    display: flex;
+    gap: 10px;
+}
+#down2b{
+    display: flex;
+    margin-top: 15px;
+    gap: 15px;
+    padding-left: 40px;
+}
+#down3t{
+    display: flex;
+    gap: 10px;
+}
+#down3b{
+    display: flex;
+    margin-top: 15px;
+    gap: 15px;
+    padding-left: 40px;
+}
+#page2{
+    width: 100%;
+    height: 80vh;
+    font-family: 'gilroy';
+    mix-blend-mode: hard-light;
+    background-image: url(https://i.pinimg.com/564x/70/ae/15/70ae151b9bd3966ebe9a8644f4d51bcb.jpg);
+    background-size: cover;
+}
+#page2heading{
+    align-items: center;
+    color: rgb(84, 82, 80);
+}
+#page2heading h1{
+    text-transform: uppercase;
+    padding-top: 35x;
+    padding-left: 600px;
+}
+#page2heading h2{
+    text-transform: capitalize;
+    padding-left: 440px;
+    margin-top: 20px;
+}
+#cards{
+    display: flex;
+    margin-top: 20px;
+    margin-right: 10px;
+    margin-left: 80px;
+    padding: 30px;
+    gap: 100px;
+    text-align: center;
+}
+.card img{
+    width: 350px;
+    height: 450px;
+    transition: .8s;
+}
+.card img:hover{
+    transform: scale(1.2);
+}
+.card button{
+    padding: 10px 25px;
+    margin-top: 40px;
+    font-size: 20px;
+    border-radius: 50px;
+    background-color: black;
+    color: antiquewhite;
+}
+.card button:hover{
+    transform: scale(1.1);
+    background-color: aqua;
+    color: black;
+}
+#page3{
+    width: 100%;
+    height: 100vh;
+    font-family: 'gilroy'; 
+    background-image: url(https://globusliebe.com/wp-content/uploads/2019/04/long-island-bahamas-cape-santa-maria-sonnenuntergang.jpg);
+    background-size: cover;
+    
+}
+
+#page3centre{
+    position: absolute;
+    margin-top: 11%;
+    padding-left: 50px;
+    color: antiquewhite;
+}
+#page3centre>h1{
+    text-transform: uppercase;
+    font-size: 60px;
+    color: antiquewhite;
+}
+#page3centre>p{
+    width: 30%;
+    font-size: 20px;
+}
+#page3centre #c1{
+    display: flex;
+    margin-top: 15px;
+    gap: 15px;
+}
+#c1 i{
+    font-size: 80px;
+}
+#c1 i:hover{
+    color: red;
+}
+#c1 h2{
+    padding-top: 10px;
+    font-size: 40px;
+}
+#c2{
+    display: flex;
+    margin-top: 15px;
+}
+#c2 i{
+    font-size: 30px;
+}
+#c2 h2{
+    font-size: 30px;
+}
+#page3cards{
+    display: flex;
+    position: absolute;
+    left: 40%;
+    margin-top: 15%;
+    gap: 100px;
+}
+.page3card img{
+    width: 300px;
+    height: 340px;
+    transition: 1s;
+}
+.page3card img:hover{
+    transform: scale(1.2);
+}
+.page3card button{
+    margin-top: 20px;
+    padding: 15px 35px;
+    border-radius: 20%;
+}
+
